@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css?family=Kreon&display=swap');
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-size: 1.6rem;
+    font-family: 'Kreon', serif;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+@media (max-width:767px) {
+    body {
+        font-size: 1.4rem;
+    }
+}
+
+
+/* ------------HEADER------------ */
+
+.navbar {
+    background-color: rgba(64, 74, 79, 0.8);
+    border-bottom: 4px solid #3e2c0e;
+}
+
+.nav-item:hover {
+    background-color: #3e2c0e;
+}
+
+.navbar-brand {
+    font-size: 3rem;
+}
+
+.nav-item {
+    margin: 0 2rem;
+}
+
+
+/* ----------MAIN----------------- */
+
+
+/* JUMBOTRON */
+
+.cake {
+    position: relative;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.banner-cake{
+    position: absolute;
+    z-index: -1;
+}
+
+.jumbotron {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: unset;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.slogan {
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.slogan h1 {
+    margin-bottom: 3rem;
+    font-size: 7rem;
+    text-transform: uppercase;
+    background-color: white;
+    color: #3e2c0e;
+    display: inline-block;
+    padding: 0 1rem;
+}
+
+.slogan p {
+    display: inline-block;
+    background-color: #3e2c0e;
+    color: white;
+    font-size: 3rem;
+    padding: 0 1rem;
+}
+
+@media (min-width: 992px) {
+    .cake {
+        height: 80vh;
+        overflow: hidden;
+    }
+    .slogan h1 {
+        margin-bottom: 3rem;
+        font-size: 10rem;
+        text-transform: uppercase;
+        background-color: #3e2c0e;
+        color: white;
+    }
+    .slogan p {
+        background-color: white;
+        color: #3e2c0e;
+        font-size: 5rem;
+    }
+}
+
+
+/* Qui sommes nous ? */
+
+.moto {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.moto h2 {
+    font-size: 3rem;
+    font-weight: bolder;
+    margin: 2rem 2rem;
+}
+
+.moto hr {
+    border: 2px solid #3e2c0e;
+    margin: 2rem 25%;
+}
+
+.qualité {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 2rem;
+}
+
+.qualité i {
+    font-size: 5rem;
+    margin: 1rem 1rem;
+}
+
+.qualité h3 {
+    font-weight: bolder;
+    margin: 1rem 1rem;
+}
+
+.qualité p {
+    text-align: justify;
+    color: black;
+}
+
+@media (min-width: 992px) {
+    .qualités {
+        display: flex;
+    }
+}
+
+
+/* infographie */
+
+#infographie {
+    position: relative;
+    background: url(/img/kitchen-cake-backe-backing.jpg);
+    background-attachment: fixed;
+    height: 40vh;
+    overflow: hidden;
+}
+
+
+.pancarte {
+    padding: 40px;
+    position: relative;
+    background: unset;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+.info-cake{
+    position:absolute;
+    z-index: -1;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.info i {
+    font-size: 5rem;
+    padding: 2rem;
+}
+
+.info span {
+    font-size: 3rem;
+    padding: 2rem;
+}
+
+@media (min-width: 992px) {
+    .pancarte {
+        justify-content: space-between;
+    }
+    .info i {
+        font-size: 7rem;
+        padding: 2rem;
+    }
+    .info span {
+        font-size: 5rem;
+        padding: 2rem;
+    }
+    .info p {
+        font-size: 2rem;
+    }
+}
+
+
+/* Notre carte */
+
+.carte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.gourmandises img {
+    border: 3px solid #dadada;
+    border-radius: 1rem;
+    margin: 2rem 2rem;
+}
+
+.gourmandises h3 {
+    color: #3e2c0e;
+    font-size: 2rem;
+    font-weight: bolder;
+    margin: 2rem 2rem;
+}
+
+.gourmandises ul {
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 992px) {
+    .carte {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+}
+
+
+/* menus */
+
+#Nosmenus {
+    background: url(/img/pexels-photo-24553.jpg);
+    background-attachment: fixed;
+}
+
+.vitrine {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pics {
+    position: relative;
+    margin: 2rem;
+}
+
+#Nosmenus {
+    position: relative;
+}
+
+.titreMenus {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.pics p {
+    position: absolute;
+    top: -1rem;
+    left: -1rem;
+    border: 2px solid white;
+    border-radius: 100%;
+    background-color: #3e2c0e;
+    padding: 0.5rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    line-height: 3rem;
+}
+
+.pics img {
+    height: 25vh;
+    border: 2px solid white;
+    border-radius: 1rem;
+}
+
+#Nosmenus .moto h2,
+p {
+    color: white;
+}
+
+.composition {
+    text-align: center;
+}
+
+.composition h3 {
+    font-weight: bolder;
+    color: white;
+    font-size: 2rem;
+    background-color: #3e2c0e;
+    border-color: #3e2c0e;
+    border-radius: 2rem;
+    display: inline-block;
+    padding: 1rem;
+    border: 2px solid white;
+}
+
+.composition p {
+    color: white;
+}
+
+.composition a {
+    background-color: #c53a39;
+    border: 2px solid #c53a39;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.composition a:hover {
+    background-color: #3e2c0e;
+    border-color: #3e2c0e;
+    color: white;
+}
+
+@media (min-width: 992px) {
+    #Nosmenus,
+    .backmuffins {
+        height: 100vh;
+        overflow: hidden;
+    }
+    #Nosmenus {
+        position: relative;
+    }
+    .titreMenus {
+        position: none;
+    }
+    .menus {
+        position: absolute;
+        top: 15rem;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+    .vitrine {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 5rem 0;
+    }
+    .composition,
+    .pics {
+        width: 50%;
+    }
+}
+
+
+/* réservation */
+
+#Reservation p {
+    color: black;
+}
+
+.zigzag {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    background-color: white;
+}
+
+.zigzag::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1.5rem;
+    display: block;
+    background: linear-gradient(-45deg, transparent 33.33%, #3e2c0e 33.33%, #3e2c0e 66.66%, transparent 66.66%);
+}
+
+.formulairesResa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulairesResa a {
+    background-color: #c53a39;
+    border: 2px solid #c53a39;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    color: white;
+    padding: 0.5rem;
+    margin: 2rem 1rem;
+}
+
+.formulaires {
+    width: 100%;
+}
+
+.formulaire {
+    margin: 1rem;
+}
+
+.formulR {
+    display: flex;
+    justify-content: space-between;
+}
+
+.formulR li {
+    margin: 1rem 0;
+    width: 45%;
+}
+
+.informations {
+    display: flex;
+    justify-content: center;
+}
+
+.infos {
+    padding: 0 2rem;
+}
+
+.info {
+    margin: 0 50%;
+}
+
+.infoI i {
+    font-size: 3rem;
+}
+
+.infoI h3 {
+    display: inline-block;
+    font-size: 2rem;
+}
+
+.infos h4 {
+    font-size: 1.6rem;
+}
+
+.infos p,
+a {
+    font-size: 1.4rem;
+}
+
+@media (min-width: 992px) {
+    .formulaireResa {
+        display: flex;
+        flex-direction: row;
+    }
+    .formulairesResa {
+        width: 75%;
+    }
+    .informations {
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+    }
+}
+
+
+/* footer */
+
+footer {
+    background-color: #3e2c0e;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+}
+
+.basPage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.reseaux ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+}
+
+.reseaux li {
+    margin: 0 0.5rem;
+    font-size: 3rem;
+}
