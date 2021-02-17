@@ -172,7 +172,7 @@ img {
 
 #infographie {
     position: relative;
-    background: url(/img/kitchen-cake-backe-backing.jpg);
+    background-image: url(/img/kitchen-cake-backe-backing.jpg);
     background-attachment: fixed;
     height: 40vh;
     overflow: hidden;
@@ -267,7 +267,7 @@ img {
 /* menus */
 
 #Nosmenus {
-    background: url(/img/pexels-photo-24553.jpg);
+    background-image: url(/img/pexels-photo-24553.jpg);
     background-attachment: fixed;
 }
 
