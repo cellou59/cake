@@ -172,7 +172,7 @@ img {
 
 #infographie {
     position: relative;
-    background-image: url(/img/kitchen-cake-backe-backing.jpg);
+    background-image: url(https://github.com/cellou59/cake/blob/master/img/kitchen-cake-backe-backing.jpg?raw=true);
     background-attachment: fixed;
     height: 40vh;
     overflow: hidden;
@@ -267,7 +267,7 @@ img {
 /* menus */
 
 #Nosmenus {
-    background-image: url(/img/pexels-photo-24553.jpg);
+    background-image: url(https://github.com/cellou59/cake/blob/master/img/pexels-photo-24553.jpg?raw=true);
     background-attachment: fixed;
 }
 
